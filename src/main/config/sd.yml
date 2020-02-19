@@ -5,7 +5,8 @@ spring:
   redis:
     database: 0
     timeout: 7200
-    password: rss123
+    #password: rss123
+    password:
     lettuce:
         pool:
           max-active: 32
@@ -13,5 +14,7 @@ spring:
           min-idle: 16
           max-wait: -1
     sentinel:
-      master: mymaster
-      nodes : 10.80.248.24:26379
+      #master: mymaster
+      master: master168
+      #nodes : 10.80.248.24:26379
+      nodes : 192.168.1.170:26379
